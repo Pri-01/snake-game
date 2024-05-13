@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    font-size: 30px;
+    right: 50px;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+}
+
+#board{
+    background: linear-gradient(rgb(139, 231, 139), rgb(0, 255, 251));
+    width: 90vmin;
+    height: 92vmin;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+.head{
+    background:linear-gradient(rgb(193, 105, 105),rgb(230, 230, 102));
+    border: 2px solid rgb(32, 5, 32);
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background: linear-gradient(rgb(201, 58, 58), rgb(43, 206, 206));
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background:linear-gradient(red,purple);
+    border: .25vmin solid black;
+}
+
+#HiscoreBox{
+    position: absolute;
+    top: 49px;
+    font-size: 30px;
+    right: 50px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+}
